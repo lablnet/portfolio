@@ -1,0 +1,49 @@
+/**
+ *  Name: Ripha Study Portal
+ *  Version: 1.0
+ *  Designed By: Muhammad Umer Farooq
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons');
+
+@import "~vue-material/dist/theme/engine"; // Import the theme engine
+
+@include md-register-theme("default", (
+  primary: md-get-palette-color(deeppurple, A200), // The primary color of your application
+  accent: md-get-palette-color(black, 500), // The accent or secondary color
+  theme: light // This can be dark or light
+));
+
+@import "~vue-material/dist/theme/all"; // Apply the theme
+
+body {
+    margin: -1px!important;
+}
+.md-content {
+    padding: 16px;
+}
+.md-drawer {
+width: 230px;
+max-width: calc(100vw - 125px);
+}
+.md-list-item-text a {
+    color: black!important;
+}
+.md-list-item-text a:hover {
+    text-decoration: none;
+}
+.md-progress-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .md-list {
+    width: 350px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid rgba(#000, .12);
+  }
+  
