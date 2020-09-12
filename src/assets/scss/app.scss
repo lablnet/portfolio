@@ -363,3 +363,19 @@ footer p a, footer a {
 footer p a:hover, footer a:hover {
   text-decoration: none!important;
 }
+
+.scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.14); 
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.14);
+  border-radius: 4px;
+}

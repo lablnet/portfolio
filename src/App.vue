@@ -94,6 +94,9 @@
       <router-view></router-view>
     </div>
 
+    <div>
+      <md-button class="scroll" v-if="top" @click="scrollTop"><md-icon>keyboard_arrow_up</md-icon></md-button>
+    </div>
     <footer>
       <p>Made with <md-icon style="color: red">favorite</md-icon> by <a href="https://github.com/lablnet">Umer</a>.  <a href="https://github.com/lablnet">v1.1.0</a></p>
     </footer>
@@ -105,14 +108,31 @@
     name: 'App',
     data: () => ({
       showNavigation: false,
-      showSidepanel: false
+      showSidepanel: false,
+      top: false
     }),
+    created () {
+      window.addEventListener('scroll', this.handleScroll);
+    },
     watch: {
       '$route' (to, from) {
           this.showSidepanel = false
           this.showNavigation = false // hide navigation on click.
           document.title = to.meta.title || 'Muhammad Umer Farooq'
+      }
+    },
+    methods: {
+      scrollTop() {
+        window.scrollTo(0,0);
       },
+      handleScroll(event)
+      {
+          if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            this.top = true
+          } else {
+            this.top = false
+          }
+      }
     }
   }
 </script>
