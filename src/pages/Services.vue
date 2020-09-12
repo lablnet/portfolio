@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h3 class="title">Gallery</h3>
+      <h3 class="title">Services</h3>
       <md-card>
         <md-card-content style="font-size: 19px">
           <h3 class="title">Coming soon.</h3>

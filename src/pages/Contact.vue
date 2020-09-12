@@ -1,12 +1,8 @@
 <template>
   <div>
+    <h3 class="title">Contact Me</h3>
     <form novalidate class="md-layout" @submit.prevent="validateData">
       <md-card class="md-layout-item" style="padding:25px">
-        <md-card-header>
-            <md-toolbar :md-elevation="1">
-                <span class="md-title">Contact me</span>
-            </md-toolbar>
-        </md-card-header>
         <md-card-content>
             <md-field>
                 <label for="name">Name</label>
@@ -26,13 +22,14 @@
           <md-progress-bar md-mode="indeterminate" v-if="sending" />
           <span class="md-caption">You can expect to recieve my response within 24 hrs.</span>
         <md-card-actions>
-          <md-button type="submit" class="md-primary" :disabled="sending">Send</md-button>
+          <md-button type="submit" class="" :disabled="sending">Send</md-button>
         </md-card-actions>
       </md-card>
       <md-snackbar :md-active.sync="send">{{resp}}</md-snackbar>
     </form>
   </div>
 </template>
+
 <script>
   import axios from "axios";
 

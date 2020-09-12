@@ -1,5 +1,5 @@
 /**
- *  Name: Ripha Study Portal
+ *  Name: lablnet
  *  Version: 1.0
  *  Designed By: Muhammad Umer Farooq
  */
@@ -10,22 +10,25 @@
 @import "~vue-material/dist/theme/engine"; // Import the theme engine
 
 @include md-register-theme("default", (
-  primary: md-get-palette-color(deeppurple, A200), // The primary color of your application
+  primary: md-get-palette-color(white, A200), // The primary color of your application
   accent: md-get-palette-color(black, 500), // The accent or secondary color
   theme: light // This can be dark or light
 ));
 
 @import "~vue-material/dist/theme/all"; // Apply the theme
 
+@import 'variables/app';
+
 body {
     margin: -1px!important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .md-content {
     padding: 16px;
 }
 .md-drawer {
-width: 230px;
-max-width: calc(100vw - 125px);
+  width: 230px;
+  max-width: calc(100vw - 125px);
 }
 .md-list-item-text a {
     color: black!important;
@@ -34,16 +37,293 @@ max-width: calc(100vw - 125px);
     text-decoration: none;
 }
 .md-progress-bar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.md-list {
+  width: 350px;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid rgba(#000, .12);
+}
+
+.md-elevation-4 {
+  border: 1px solid rgba(0,0,0,0.14); 
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.14);
+  border-radius: 4px;
+}
+
+/* Card */
+.md-card{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 25px 0;
+  overflow: unset;
+  border: 1px solid rgba(0,0,0,0.14); 
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.14);
+  border-radius: 4px;
+  color: #000;
+  background: #fff;
+
+  .card-height-indicator {
+      margin-top: 100%;
   }
-  .md-list {
-    width: 350px;
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid rgba(#000, .12);
+
+  &.row-space{
+      .header{
+          padding: 15px 20px 0;
+      }
+  }
+  .title{
+      margin-top: 0;
+      margin-bottom: 5px;
+  }
+  .card-image {
+      height: 60%;
+      position: relative;
+      overflow: hidden;
+
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: -30px;
+      border-radius: 6px;
+
+      img {
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+          pointer-events: none;
+      }
+      .card-title {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: #fff;
+          font-size: 1.125rem;
+          text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+      }
+  }
+  .md-card-content{
+      padding: 15px 20px;
+
+      .category{
+          margin: 0;
+      }
+  }
+  .text-gray {
+    color: #999999!important;
+    font-size: 19px;
+  }
+
+  .md-card-actions{
+      margin: 0 20px 10px;
+      padding: 10px 0 0 0;
+      border-top: 1px solid #eeeeee;
+
+      .content{
+          display: block;
+      }
+
+      div{
+          display: inline-block;
+      }
+      .author{
+          color: #999999;
+      }
+      .stats{
+          line-height: 22px;
+          color: #999999;
+          font-size: 12px;
+
+          .md-icon.md-theme-default.md-icon-font{
+              position: relative;
+              top: -1px;
+              font-size: 14px + 2 !important;
+              color: #999999;
+          }
+      }
+
+      h6{
+          color: #999999;
+      }
+
+      .md-card-header{
+        margin: -20px 16px 0;
+        border-radius: 4px;
+        padding: 15px;
+        background-color: #999999;
+  
+        .title{
+            color: #fff;
+        }
+    }
+  }
+
+  img{
+      width: 100%;
+      height: auto;
+  }
+
+  .author{
+      .avatar{
+          width: 30px;
+          height: 30px;
+          overflow: hidden;
+          border-radius: 50%;
+          margin-right: 5px;
+      }
+
+      a{
+          color: #000;
+          text-decoration: none;
+
+          .ripple-container{
+              display: none;
+          }
+      }
+  }
+}
+.md-card-profile {
+  margin-top: 50px;
+  text-align: center;
+
+  .md-card-avatar{
+      max-width: 130px;
+      max-height: 130px;
+      margin: -50px auto 0;
+      border-radius: 50%;
+      overflow: hidden;
+      & + .md-card-content{
+          margin-top: 15px;
+      }
+  }
+  &.md-card-plain{
+      .card-avatar{
+          margin-top: 0;
+      }
+  }
+}
+
+.page-content {
+  padding: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+body {
+  background-color: #e7e8e8!important;
+}
+.md-ripple .md-button-content a{
+  color: #fff;
+  text-decoration: none;
+}
+.md-ripple .md-button-content a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.github {
+  background-color: #292e31!important;
+}
+.twitter {
+  background-color: #27aaee!important;
+}
+
+.card-header-special {
+  width: 100px;
+  height: 50px;
+  margin-top: -30px;
+  margin-left: -20px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.14); 
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.14);
+  border-radius: 4px;
+}
+.profile-cards {
+  text-align: center;
+}
+.card-header-special h4 {
+  margin: 0px;
+  word-wrap: break-word;
+}
+.profile-cards {
+  width: 20%;
+  max-width: 100%;
+  font-size:  19px;
+  margin: 2%;
+}
+.second {
+  margin-left: 35px!important;
+  margin-right: 35px!important;
+}
+@media only screen and (max-width: 1380px) {
+  .profile-cards {
+    width: 100%!important;
+    margin: 0px!important;
+    margin-top: 40px!important;
+  }
+  .page-content {
+    padding: 25px;
+    padding-left: auto;
+    padding-right: auto;
   }
   
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 20px;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+.title {
+  font-weight: 100;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.project-tech {
+  margin: 5px;
+}
+.project-tech p {
+  display: inline-flex!important;
+  padding: 6px;
+  border: 1px solid rgba(0,0,0,0.14);
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.14);
+  border-radius: 4px;
+}
+.project-btn a {
+  float: right;
+  color: #fff!important;
+  background-color: #292e31!important;
+  padding: 6px;
+  border: 1px solid rgba(0,0,0,0.14);
+  box-shadow: 0 0px 1px 0 rgba(0,0,0,0.14);
+  border-radius: 4px;
+}
+.project-btn a:hover {
+  text-decoration: none;
+}
+.project-note p {
+  color: red;
+  text-align: center;
+}
+.md-progress-bar {
+  margin-top: 85px;
+}

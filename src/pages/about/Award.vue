@@ -3,7 +3,7 @@
         <div v-if="!error">
             <md-progress-bar v-if="!load" class="md-accent" md-mode="indeterminate"></md-progress-bar>
         </div>
-        <h3 class="title">Work Experince</h3>
+        <h3 class="title">Awards</h3>
         <div v-if="load">
             <div v-for="(item, index) in data" :key="index">
                 <md-card>
@@ -14,16 +14,20 @@
                     </md-card-header>
                     <md-table >
                         <md-table-row>
-                            <md-table-cell><strong>Company</strong></md-table-cell>
-                            <md-table-cell>{{item["company"]}}</md-table-cell>
+                            <md-table-cell><strong>By</strong></md-table-cell>
+                            <md-table-cell>{{item["by"]}}</md-table-cell>
                         </md-table-row>
                         <md-table-row>
-                            <md-table-cell><strong>Duration</strong></md-table-cell>
-                            <md-table-cell>{{item["duration"]}}</md-table-cell>
+                            <md-table-cell><strong>Prize</strong></md-table-cell>
+                            <md-table-cell>{{item["prize"]}}</md-table-cell>
                         </md-table-row>
                         <md-table-row>
-                            <md-table-cell><strong>Position</strong></md-table-cell>
-                            <md-table-cell>{{item["position"]}}</md-table-cell>
+                            <md-table-cell><strong>Date</strong></md-table-cell>
+                            <md-table-cell>{{item["date"]}}</md-table-cell>
+                        </md-table-row>
+                        <md-table-row>
+                            <md-table-cell><strong>Ref</strong></md-table-cell>
+                            <md-table-cell>{{item["ref"]}}</md-table-cell>
                         </md-table-row>
                     </md-table>
                 </md-card>
@@ -43,7 +47,7 @@
     import axios from "axios";
     import url from "@/url"
     export default {
-        name: 'work',
+        name: 'awards',
         data() {
             return {
                 data: [],
@@ -55,7 +59,7 @@
             loadData() {
                 this.data = []
                 this.error = false
-                axios.get(`${url}data/work.json?timestamp=${new Date().getTime()}`).then(response => {
+                axios.get(`${url}data/awards.json?timestamp=${new Date().getTime()}`).then(response => {
                     this.data =  response.data
                     this.load = true
                 }).catch(err => {

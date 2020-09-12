@@ -1,10 +1,13 @@
 <template>
-  <md-empty-state
-    md-rounded
-    md-icon="access_time"
-    md-label="Nothing in Publication"
-    md-description="Umer did not publish anything yet.">
-  </md-empty-state>
+  <div>
+    <h3 class="title">Publication</h3>
+    <md-empty-state
+      md-rounded
+      md-icon="access_time"
+      md-label="Nothing in Publication"
+      md-description="There is no publish anything yet.">
+    </md-empty-state>
+  </div>
 </template>
 
 <script>

@@ -3,7 +3,7 @@
     <div v-if="!error">
       <md-progress-bar v-if="!load" class="md-accent" md-mode="indeterminate"></md-progress-bar>
     </div>
-    <h3 class="title">Interests</h3>
+    <h3 class="title">Umer's Quotes</h3>
     <div v-if="load">
       <md-card v-for="(interest, index) in data" :key="index">
         <md-card-content>
@@ -37,7 +37,7 @@
             loadData() {
                 this.data = []
                 this.error =  false
-                axios.get(`${url}data/interests.json?timestamp=${new Date().getTime()}`).then(response => {
+                axios.get(`${url}data/quotes.json?timestamp=${new Date().getTime()}`).then(response => {
                     this.data =  response.data
                     this.load = true
                 }).catch(err => {
