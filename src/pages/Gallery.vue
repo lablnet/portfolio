@@ -21,11 +21,11 @@ export default {
         })
     },
     extractPhotos(content) {
-      let regex = /\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*)"/g
+      let regex = '/\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*)"/g'
       const links = new Set()
       let match
       while (match = regex.exec(content)) {
-        console.log(match[1])
+        //console.log(match[1])
       } 
       return Array.from(links)
     }
