@@ -4,26 +4,25 @@
     <form novalidate class="md-layout" @submit.prevent="validateData">
       <md-card class="md-layout-item" style="padding:25px">
         <md-card-content>
-            <md-field>
+            <md-field :class="messageClass">
                 <label for="name">Name</label>
                 <md-input name="name" id="name" autocomplete="given-name" v-model="form.name" :disabled="sending" />
-                <span class="md-error" v-if="form.error">The name is required</span>
+                <span class="md-error" v-if="form.error">All fields are required</span>
             </md-field>
-            <md-field>
+            <md-field :class="messageClass">
                 <label for="email">Email</label>
                 <md-input type="email" name="email" id="email" autocomplete="email" v-model="form.email" :disabled="sending" />
-                <span class="md-error" v-if="form.error">The email is required</span>
+                <span class="md-error" v-if="form.error">All fields are required</span>
             </md-field>
-            <md-field>
+            <md-field :class="messageClass">
                 <label>Message</label>
                 <md-textarea v-model="form.comment" :disabled="sending"></md-textarea>
+                <span class="md-error" v-if="form.error">All fields are required</span>
             </md-field>
           </md-card-content>
           <md-progress-bar md-mode="indeterminate" v-if="sending" />
           <span class="md-caption">You can expect to recieve my response within 24 hrs.</span>
-        <md-card-actions>
-          <md-button type="submit" class="" :disabled="sending">Send</md-button>
-        </md-card-actions>
+          <md-button type="submit" style="float: right" class="md-raised md-primary" :disabled="sending">Send</md-button>
       </md-card>
       <md-snackbar :md-active.sync="send">{{resp}}</md-snackbar>
     </form>
@@ -73,11 +72,18 @@
       },
       validateData () {
         //validate
-        let valid = true
-        if (valid) {
-          this.sent()
-        } else {
-            this.error = true
+        this.form.error = false
+        if (this.form.name === '' || this.form.name === null || this.form.name === 0 || this.form.email === '' || this.form.email === null || this.form.email === 0 || this.form.comment === '' || this.form.comment === null || this.form.comment === 0){
+            this.form.error = true
+            return;
+        }
+        this.sent()
+      }
+    },
+    computed: {
+      messageClass () {
+        return {
+          'md-invalid': this.form.error
         }
       }
     }
