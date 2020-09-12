@@ -58,18 +58,14 @@
                 this.data = []
                 this.error = false
                 axios.get(`${url}data/projects.json?timestamp=${new Date().getTime()}`).then(response => {
-                    console.log(response.data)
                     this.data =  response.data
                     this.load = true
-                    console.log(this.data)
-                    console.log(this.load)
                 }).catch(err => {
                     this.error = true
                 })
             }
         },
         mounted() {
-            console.log("workig")
             this.loadData()
         }
     }
