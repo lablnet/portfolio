@@ -82,7 +82,7 @@
                     <h4>{{occupation}}</h4>
                 </md-card-content>
             </md-card>
-            <md-card>
+            <md-card style="margin-top: 35px">
                 <md-card-header class="card-header-special" style="background:#fff; color:#000; width: 180px;">
                     <h4>Fav Quote</h4>
                 </md-card-header>

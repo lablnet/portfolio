@@ -3,27 +3,23 @@
         <div>
             <md-progress-bar v-if="!load" class="md-accent" md-mode="indeterminate"></md-progress-bar>
         </div>
-        <h3 class="title">Skills</h3>
-        <md-card v-if="load">
-            <md-card-content>
-                <md-list class="md-double-line" v-for="items in data" v-bind:key="items[0]">
-                    <md-card-header class="card-header-special" :md-elevation="2">
-                        <h4>{{items[0]}}</h4>
-                    </md-card-header>
-                    <div v-for="item in items" v-bind:key="item['name']">
-                        <md-list-item v-if="item['name']">
-                            <md-icon class="md-primary">{{item['icon']}}</md-icon>
-                            <div class="md-list-item-text">
-                                <span>{{item['name']}}</span>
-                                <span>{{item['duration']}}</span>
-                            </div>
-                        </md-list-item>
-                        <md-divider></md-divider>
-                    </div>
-                </md-list>
-            </md-card-content>
-        </md-card>
-  </div>
+        <h3 class="title" style="text-align: center">Skills</h3>
+        <div v-if="load">
+            <div v-for="items in data" :key="items[0]">
+                <h3 class="title">{{items[0]}}</h3>
+                <span v-for="item in items" :key="item['name']">
+                    <md-card class="profile-cards " v-if="item['name']">
+                        <md-card-header class="card-header-special" style="width: 180px">
+                            <h4>{{item['duration']}}</h4>
+                        </md-card-header>
+                        <md-card-content>
+                            <h4>{{item['name']}}</h4>
+                        </md-card-content>
+                    </md-card>
+                </span>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>

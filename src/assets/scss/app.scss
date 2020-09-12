@@ -327,3 +327,22 @@ blockquote p {
 .md-progress-bar {
   margin-top: 85px;
 }
+.md-focused {
+  border-bottom: 1px solid black!important;
+}
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid rgba(0,0,0,0.14);
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
