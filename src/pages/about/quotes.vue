@@ -7,7 +7,9 @@
     <div v-if="load">
       <md-card v-for="(interest, index) in data" :key="index">
         <md-card-content>
-          <span class="md-list-item-text">{{interest["title"]}}</span>  
+          <blockquote>
+            <p>{{interest["title"]}}</p>
+          </blockquote>
         </md-card-content>
       </md-card>
     </div>
