@@ -93,6 +93,10 @@
     <div class="page-content">
       <router-view></router-view>
     </div>
+
+    <footer>
+      <p>Made with <md-icon style="color: red">favorite</md-icon> by <a href="https://github.com/lablnet">Umer</a>.  <a href="https://github.com/lablnet">v1.0.0</a></p>
+    </footer>
   </div>
 </template>
 

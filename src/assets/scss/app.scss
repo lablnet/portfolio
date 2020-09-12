@@ -20,7 +20,6 @@
 @import 'variables/app';
 
 body {
-    margin: -1px!important;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .md-content {
@@ -345,4 +344,22 @@ pre {
   padding: 1em 1.5em;
   display: block;
   word-wrap: break-word;
+}
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 6px;
+  z-index: 0;
+}
+footer p {
+  text-align: center;
+}
+footer p a, footer a {
+  color: black!important;
+  
+}
+footer p a:hover, footer a:hover {
+  text-decoration: none!important;
 }
