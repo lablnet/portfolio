@@ -9,7 +9,7 @@ My personal portfolio website https://lablnet.github.io/portfolio/
 
 ## Data files
 The sample data files are given under `portfolio-data` directory.
-you can fork it and the github action build the portfolio for you,  you can push changes it will auto update thanks.
+you can fork it and the github action build the portfolio for you,  you can push changes it will auto update.
 
 ### Development
 Just run command.
