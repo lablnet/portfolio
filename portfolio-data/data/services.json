@@ -1,0 +1,17 @@
+[
+    {
+        "style": "width: 300px",
+        "name": "Web Development/Design",
+        "desc": "I am offering Professional Web Development/Designing. If you're looking for professional website developer, and designer, then you're in the right place, I can develop it for you."
+    },
+    {
+        "style": "width: 250px",
+        "name": "Mobile & Desktop Application",
+        "desc": "I am offering, Desktop and mobile cross platform app development."
+    },
+    {
+        "style": "",
+        "name": "SEO",
+        "desc": "I am offering Professional SEO. If you're looking for professional SEO optimizer, then you're in the right place, I can optimize your site for SEO."
+    }
+]

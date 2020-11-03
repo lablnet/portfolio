@@ -1,0 +1,21 @@
+{
+    "name": "Muhammad Umer Farooq",
+    "dob": "29 - 12 - 2001",
+    "nationality": "Pakistani",
+    "race": "Asian",
+    "email": "mumerfarooqlablnet01@gmail.com",
+    "religion": "Suni, Islam",
+    "city": "Rawalpindi",
+    "occupation": "Student",
+    "pic": "https://i.imgur.com/AptkNDm.jpg",
+    "title": "Software Developer",
+    "bio": "My name is Umer, since 2017 i have been in computer programming and computations, i love to solve problem using programming.",
+    "github": "https://github.com/lablnet",
+    "twitter": "https://twitter.com/lablnet",
+    "quotes": [
+        {
+            "text": "Try to learn something new every day.",
+            "author": "Lex Fridman"
+        }
+    ]
+}

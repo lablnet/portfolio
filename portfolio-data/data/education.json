@@ -1,0 +1,26 @@
+[
+  {
+      "style": "width:150px",
+      "header": "University",
+      "institute": "Riphah Intertational University",
+      "session": "2020 - 2024",
+      "program": "BSSE",
+      "cgpa": "CGPA: 4/4"
+  },
+  {
+      "style": "width:250px",
+      "header": "High School Certificate",
+      "institute": "PUNJAB COLLEGE OF COMMERCE. 661-PESHAWAR-ROAD-RAWALPINDI CANTT (2833)",
+      "session": "2017 - 2019",
+      "program": "ICS (Computer Science with Math)",
+      "cgpa": "%age: 55%"
+  },
+  {
+      "style": "width:250px",
+      "header": "Secondary School Certificate",
+      "institute": "F G BOYS SECONDARY SCHOOL NAI CHAWNI WESTRIDGE-1 RAWALPINDI CANTT",
+      "session": "2015 - 2017",
+      "program": "Science",
+      "cgpa": "%age: 65%"
+  }
+]

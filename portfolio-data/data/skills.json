@@ -1,0 +1,114 @@
+{
+    "Languages": [
+    "Languages",
+    {
+        "name": "PHP",
+        "duration": "2017 - presnt",
+        "icon": "star"
+    },
+    {
+        "name": "HTML/CSS/JavaScript",
+        "duration": "2017 - presnt",
+        "icon": "star"
+    },
+    {
+        "name": "Python",
+        "duration": "2019 - preent",
+        "icon": "star"
+    },
+    {
+        "name": "C / C++",
+        "duration": "2019 - preent",
+        "icon": "star"
+    },
+    {
+        "name": "Dart/Java/ Ruby / Scale",
+        "duration": "2020 - preent",
+        "icon": "star"
+    }
+    ],
+    "duration": [
+    "Frameworks",
+    {
+        "name": "VueJs",
+        "duration": "2019 - present",
+        "icon": "star"
+    },
+    {
+        "name": "Bootstrap / jQuery",
+        "duration": "2017 - presnt",
+        "icon": "star"
+    },
+    {
+        "name": "Zest framework",
+        "duration": "2018 - preent",
+        "icon": "star"
+    },
+    {
+        "name": "Laravel",
+        "duration": "2019 - preent",
+        "icon": "star"
+    },
+    {
+        "name": "Flask / Fltter / D3",
+        "duration": "2020 - preent",
+        "icon": "star"
+    }
+    ],
+    "databases": [
+    "Databases",
+    {
+        "name": "SQL",
+        "duration": "2017 - present",
+        "icon": "star"
+    },
+    {
+        "name": "NoSQL",
+        "duration": "2020 - presnt",
+        "icon": "star"
+    },
+    {
+        "name": "...",
+        "duration": "",
+        "icon": ""
+    },
+    {
+        "name": "XML",
+        "duration": "2017 - preent",
+        "icon": "star"
+    },
+    {
+        "name": "JSON",
+        "duration": "2017 - preent",
+        "icon": "star"
+    }
+    ],
+    "tools": [
+    "Tools",
+    {
+        "name": "Git",
+        "duration": "2017 - present",
+        "icon": "star"
+    },
+    {
+        "name": "Markdown",
+        "duration": "2017 - presnt",
+        "icon": "star"
+    },
+    {
+        "name": "LaTeX",
+        "duration": "2020 - present",
+        "icon": "star"
+    },
+    {
+        "name": "Blender",
+        "duration": "2020 - preent",
+        "icon": "star"
+    },
+    {
+        "name": "Ms office / Google Docs ...",
+        "duration": "2017 - preent",
+        "icon": "star"
+    }
+    ]
+}
