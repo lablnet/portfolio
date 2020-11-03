@@ -1,4 +1,6 @@
-My personal portfolio website https://www.muhammadumerfarooq.me/
+[![portfilio](https://github.com/lablnet/portfolio/workflows/portfolio/badge.svg)](https://github.com/lablnet/portfolio/actions)
+
+My personal portfolio website https://lablnet.github.io/portfolio/
 
 ## Installations
 1. Close this repo
