@@ -10,7 +10,7 @@
     "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "vue": "2.6.11",
     "vue-clickaway": "2.2.2",
     "vue-github-buttons": "3.1.0",
